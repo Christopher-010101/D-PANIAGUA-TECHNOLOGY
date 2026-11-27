@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Acceso administrativo de D'Paniagua Technology.">
+    <title>Acceso de administrador | D'Paniagua Technology</title>
+    <link rel="icon" href="../assets/img/logo.svg">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/admin.css">
+  </head>
+
+  <body class="admin-login-page">
+    
+    <main class="admin-login-wrap">
+        
+      <section class="panel admin-login-card">
+            <a href="../index.html" class="admin-login-brand">
+                <img src="../assets/img/logo.svg" alt="D'Paniagua Technology">
+            </a>
+            <span class="eyebrow">Área privada</span>
+            
+        <h1>Acceso de administrador
+        </h1>
+
+            
+        <p>Inicia sesión con tu cuenta autorizada para gestionar la tienda.
+        </p>
+
+
+            
+        <form id="adminLoginForm">
+                
+          <div class="field">
+                    
+            <label for="adminEmail">Correo electrónico
+            </label>
+
+                    <input id="adminEmail" name="email" type="email" required autocomplete="username" placeholder="admin@correo.com">
+                
+          </div>
+
+                
+          <div class="field">
+                    
+            <label for="adminPassword">Contraseña
+            </label>
+
+                    <input id="adminPassword" name="password" type="password" required autocomplete="current-password" placeholder="Tu contraseña">
+                
+          </div>
+
+                <button class="primary admin-login-submit" type="submit">Entrar como administrador</button>
+            
+        </form>
+
+
+            
+        <div id="adminLoginNotice" class="notice" role="status" aria-live="polite">
+                Acceso protegido mediante Supabase. Solo las cuentas con rol administrador pueden entrar.
+            
+        </div>
+
+            <a class="admin-back-link" href="../index.html">← Volver a la tienda</a>
+        
+      </section>
+
+    
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabase.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/admin-login.js"></script>
+  </body>
+
+</html>
